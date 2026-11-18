@@ -4,6 +4,7 @@ Apresentação técnica (cerca de 8 minutos) sobre o ataque à Binance de 29 de 
 
 ## Arquivos
 
+- `apresentacao.pdf`: os slides em PDF. Clique nele aqui no GitHub para ver direto no navegador.
 - `index.html`: os slides. Abra no navegador.
   - `←` / `→` ou clique: navegar
   - `N`: mostrar as notas do apresentador
