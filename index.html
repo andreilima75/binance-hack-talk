@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Binance: US$ 6,4 bi via entrevista falsa e ferramenta de IA</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+html,body{margin:0;height:100%;background:#000;overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center}
+#stage>section{position:absolute;inset:0;box-sizing:border-box;display:none}
+#stage>section.on{display:flex}
+section aside{display:none}
+section h1,section h2,section h3,section p,section ul,section ol{margin:0}
+section ul,section ol{padding-left:1.2em;display:flex;flex-direction:column;gap:16px}
+table{border-collapse:collapse;width:100%} th,td{text-align:left;padding:14px 20px;border-bottom:2px solid #2E3744}
+.stmt th,.stmt td{border-color:#12161C55}
+section{background:#12161C;color:#ECE9E1;font-family:'IBM Plex Sans',Arial,sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px}
+section.alt{background:#1B212A}
+section.stmt{background:#F2B84B;color:#12161C}
+h1{font-size:96px;line-height:1.05;font-weight:600}
+h2{font-size:64px;line-height:1.1;font-weight:600}
+h3{font-size:40px;line-height:1.15;font-weight:600}
+p{font-size:32px;line-height:1.35}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:26px;line-height:1.3;color:#F2B84B;font-weight:600}
+.stmt .eyebrow{color:#12161C}
+.stmt h2{color:#12161C}
+.stmt p{color:#12161C}
+.cover{justify-content:space-between}
+.lead{color:#B4BBC6}
+.cards{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:32px}
+.cards3{grid-template-columns:1fr 1fr 1fr}
+.card{background:#1B212A;border:2px solid #2E3744;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:20px}
+.card .when{font-family:'JetBrains Mono',monospace;font-size:26px;color:#F2B84B;font-weight:600}
+.card p{color:#B4BBC6}
+.note{font-size:40px;line-height:1.25;font-weight:600}
+.tbl{font-size:32px;color:#ECE9E1}
+.small{font-size:26px;color:#B4BBC6}
+.stats{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.stat{display:flex;flex-direction:column;gap:16px}
+.big{font-size:96px;line-height:1.05;font-weight:600;color:#F2B84B}
+.stat p{color:#B4BBC6}
+ol,ul{font-size:40px;line-height:1.3;color:#ECE9E1}
+.source{position:absolute;left:128px;bottom:64px;width:1664px;font-size:26px;color:#B4BBC6}
+
+#notes{position:fixed;left:0;right:0;bottom:0;max-height:40%;overflow:auto;background:#fff;color:#111;font:18px/1.45 system-ui,sans-serif;padding:16px 24px;display:none;z-index:9}
+#hint{position:fixed;right:12px;bottom:8px;color:#888;font:13px system-ui;z-index:10}
+</style></head><body>
+<div id="stage">
+<section id="cover" class="cover" data-transition="fade">
+<p class="eyebrow">ESTUDO DE CASO · SEGURANÇA</p>
+<div style="display:flex;flex-direction:column;gap:32px">
+<h1>Binance: US$ 6,4 bilhões e uma entrevista de emprego falsa</h1>
+<p class="lead">Cadeia de ataque, ferramenta interna de IA e perguntas de controle</p>
+</div>
+<p class="small">Novembro de 2026 · cerca de 8 minutos</p>
+<aside>0:00–0:30. Abertura. O caso: em 29 de outubro, hackers ligados à Coreia do Norte (TraderTraitor, segundo o FBI) tiraram cerca de US$ 6,3 a 6,4 bilhões da Binance. O que interessa para nós é como eles chegaram lá: três máquinas de engenheiros, meses de preparação e uma ferramenta interna de IA. A cadeia em uma frase: junho, Homebrew adulterado; setembro, entrevista falsa e pyenv trocado; 20 de outubro, ferramenta interna de IA como ponte; 29 de outubro, token de deploy, contêiner e serviço de assinatura. Aviso: o relatório da Binance é preliminar e os valores variam por fonte.</aside>
+</section>
+
+<section id="homebrew" data-transition="fade">
+<p class="eyebrow">JUNHO · ENGENHEIRO A (WALLET DEVOPS)</p>
+<h2>A isca foi uma ferramenta de IA</h2>
+<div class="cards cards3">
+<div class="card"><p class="when">1 · Busca</p><h3>Procurou no buscador</h3><p>Queria instalar uma ferramenta popular de IA para programar.</p></div>
+<div class="card"><p class="when">2 · Instalação</p><h3>Homebrew adulterado</h3><p>Baixou uma cópia trocada do Homebrew, não o instalador oficial.</p></div>
+<div class="card"><p class="when">3 · Resposta</p><h3>Limpeza que não bastou</h3><p>Notebook trocado e credenciais rotacionadas, mas o atacante já conhecia o cargo dele e a equipe.</p></div>
+</div>
+<p class="small">Não divulgado: qual ferramenta de IA, qual site ou anúncio, e o que o instalador fazia.</p>
+<aside>0:30–1:15. Fato do relatório da Binance: em junho, o Engenheiro A, de Wallet DevOps, pesquisou num buscador uma ferramenta popular de IA para programar e baixou uma instalação adulterada do Homebrew. A segurança da Binance detectou, trocou o notebook e rotacionou as credenciais ligadas a ele, mas o cargo dele e os colegas da equipe de infraestrutura de carteiras já estavam expostos ao atacante. A ferramenta de IA não era o malware: era a isca. O que não foi divulgado: qual ferramenta, qual site ou anúncio, o conteúdo do instalador. Análises de terceiros: no Mac, a pasta /opt/homebrew pertence ao usuário, então trocar uma ferramenta lá não exige escalada de privilégio (Brside). O criador do Homebrew, Max Howell, culpou os anúncios do Google. A Binance cita no relatório um diário do SANS sobre a técnica do Homebrew adulterado. Hipótese não confirmada: a Constella relacionou um anúncio falso de Homebrew e um stealer de macOS rodando 16 segundos depois em um Mac de um possível funcionário; nenhuma fonte da Binance menciona anúncio. Lição técnica: o primeiro incidente foi tratado como máquina limpa, mas o dano era inteligência sobre a equipe.</aside>
+</section>
+
+<section id="interview" class="alt" data-transition="fade">
+<p class="eyebrow">SETEMBRO · ENGENHEIRO B</p>
+<h2>A entrevista falsa, passo a passo</h2>
+<div class="cards">
+<div class="card"><p class="when">1 · Contato</p><h3>Plataforma real</h3><p>Um "Project Director" de empresa fictícia abordou o engenheiro numa plataforma de vagas legítima.</p></div>
+<div class="card"><p class="when">2 · Vídeo</p><h3>"RH" ao vivo</h3><p>Chamada de vídeo, com uma conta social de fotos e vídeos pessoais para dar confiança.</p></div>
+<div class="card"><p class="when">3 · Chat</p><h3>"CEO"</h3><p>Segunda entrevista num aplicativo de chat popular.</p></div>
+<div class="card"><p class="when">4 · Entrega</p><h3>O "assignment"</h3><p>Baixar um repositório no notebook de trabalho. O código rodou na configuração.</p></div>
+</div>
+<p class="small">Não divulgado: a plataforma, o aplicativo de chat e a empresa falsa.</p>
+<aside>1:15–2:00. Fatos do relatório da Binance: em setembro, o Engenheiro B foi abordado numa plataforma de vagas legítima por alguém que se passava por Project Director de uma empresa que não existe. Duas entrevistas: a primeira, por vídeo ao vivo, com um suposto representante de RH que compartilhou uma conta de rede social cheia de fotos e vídeos pessoais para criar confiança; a segunda, por um aplicativo de chat popular, com alguém que dizia ser o CEO. No fim, ele recebeu a instrução de baixar um assignment, um repositório de código, no computador de trabalho. O código malicioso executou durante a configuração. Cada etapa soma credibilidade, como um funil de contratação de verdade, e o primeiro contato veio por canal confiável, não por e-mail de phishing. Leitura de analistas: o padrão lembra táticas documentadas da Coreia do Norte, e a Binance não ligou este caso a uma campanha específica. Segundo um analista, o perfil do engenheiro citava experiência na Binance, o que o tornava alvo relevante (fonte secundária). Nada público mostra entrevistadores com deepfake ou iscas escritas por IA. Lição: recrutador que procura seu engenheiro é evento de segurança, e ninguém deve rodar código de entrevista em máquina corporativa.</aside>
+</section>
+
+<section id="pyenv-ops" class="alt" data-transition="fade">
+<p class="eyebrow">SETEMBRO · O TESTE DE CÓDIGO</p>
+<h2>pyenv trocado em seis operações</h2>
+<table class="tbl">
+<tr><th style="width:58%">Operação</th><th style="width:42%">Efeito</th></tr>
+<tr><td style="width:58%">1 · Criar pyenv_ ao lado do real</td><td style="width:42%">Arquivo de apoio</td></tr>
+<tr><td style="width:58%">2 · Gravar 3.414 bytes em pyenv_</td><td style="width:42%">O real tinha 3.344</td></tr>
+<tr><td style="width:58%">3 · Apagar o pyenv real</td><td style="width:42%">Some o original</td></tr>
+<tr><td style="width:58%">4 · Renomear pyenv_ para pyenv</td><td style="width:42%">A cópia assume o nome</td></tr>
+<tr><td style="width:58%">5 · Apagar o link em /opt/homebrew/bin</td><td style="width:42%">Remove a entrada antiga</td></tr>
+<tr><td style="width:58%">6 · Criar novo link e abrir um zsh</td><td style="width:42%">Recebe comandos do atacante</td></tr>
+</table>
+<p class="small">Fonte: operações de arquivo do relatório da Binance, via SafeDep e The Register.</p>
+<aside>2:00–3:15. Esta é a parte mais concreta do caso. O relatório da Binance traz a tabela de operações de arquivo do teste de código, e vários veículos e a SafeDep a reproduziram. Tudo ocorre em /opt/homebrew/Cellar/pyenv/2.8.0/libexec/. pyenv é uma ferramenta que gerencia versões do Python. Passo a passo: 1) cria um arquivo de apoio chamado pyenv_ ao lado do pyenv real; 2) grava nele 3.414 bytes de conteúdo malicioso; 3) apaga o pyenv real, de 3.344 bytes; 4) renomeia pyenv_ para pyenv; 5) apaga o link pyenv em /opt/homebrew/bin; 6) cria um novo link no mesmo lugar e abre um shell zsh. A cópia maliciosa executa comandos recebidos de um servidor controlado pelo atacante. Atenção: a Halborn chama o alvo de shim do pyenv; a tabela da Binance fala em libexec/pyenv e no link em bin. Mapeamento MITRE de um analista: T1554, Compromise Host Software Binary. O que a Binance não divulgou: nome ou família do malware, servidor do atacante, a linguagem e o conteúdo do script, como o código rodou durante a configuração do repositório, e se há persistência além do binário trocado. A Binance disse também que algumas medidas ficarão em sigilo.</aside>
+</section>
+
+<section id="pyenv-stealth" data-transition="fade">
+<p class="eyebrow">POR QUE PASSOU DESPERCEBIDO</p>
+<h2>Um zero-day com cara de pyenv</h2>
+<div class="cards">
+<div class="card"><p class="when">Zero-day</p><h3>Sem assinatura</h3><p>Malware desconhecido dos fornecedores: sem regra nem patch. O endpoint não detectou.</p></div>
+<div class="card"><p class="when">Tamanho</p><h3>Quase idêntico</h3><p>3.414 bytes contra 3.344 do pyenv original.</p></div>
+<div class="card"><p class="when">Local</p><h3>Pasta do usuário</h3><p>O usuário é dono de /opt/homebrew: nada pediu senha (analistas).</p></div>
+<div class="card"><p class="when">Rastros</p><h3>Apagados</h3><p>O malware removeu os próprios vestígios, segundo a Binance.</p></div>
+</div>
+<p>Cada chamada ao pyenv rodava código do atacante. Por que o pyenv, a Binance não explica.</p>
+<aside>3:15–4:15. Zero-day em meio minuto: é uma falha, ou um malware, que os fornecedores de segurança ainda não conhecem; não existe assinatura, regra de detecção nem patch, e defesas baseadas no que já se conhece não o reconhecem. A Binance diz que o malware de dia zero não foi detectado pela proteção de endpoint e que apagou os próprios rastros. Não se sabe se explorou alguma vulnerabilidade ou se foi só malware novo, e a Binance não publicou nome, família nem hashes. Por que passa: o arquivo trocado tem quase o mesmo tamanho, fica numa pasta que o próprio desenvolvedor controla, e o pyenv continua funcionando. Uma checagem do tipo o pyenv roda nesta máquina? responde sim (Andrew Baker). A permissão de escrita em /opt/homebrew é leitura de analistas, não do relatório. Persistência: toda chamada posterior ao pyenv executa o código do atacante (Halborn). Por que o pyenv: a Binance não diz; a hipótese é que desenvolvedores o chamam o tempo todo. O que detectaria, segundo analistas (Baker, SafeDep): hashes SHA-256 dos executáveis do Cellar guardados fora da máquina; links em bin apontando para fora do prefixo do Homebrew; executáveis alterados recentemente; e rodar teste de código num ambiente isolado e descartável. Ressalva: código rodando como o usuário pode alterar arquivos, datas e baselines guardados no próprio notebook.</aside>
+</section>
+
+<section id="ai-tool" data-transition="fade">
+<p class="eyebrow">20 DE OUTUBRO · FERRAMENTA INTERNA DE IA</p>
+<h2>A IA como ponte entre máquinas</h2>
+<div class="cards cards3">
+<div class="card"><p class="when">Binance diz</p><h3>Trampolim</h3><p>Do notebook do B, usou "uma ferramenta interna de IA" para controlar as máquinas de A e C. No de A, achou o token de deploy de contêineres.</p></div>
+<div class="card"><p class="when">Não explicou</p><h3>O mecanismo</h3><p>Nem como a ferramenta deu controle, nem o nome dela, nem a falha. Foi reconstruída, com novos controles de acesso.</p></div>
+<div class="card"><p class="when">Analistas</p><h3>Identidade privilegiada</h3><p>O relatório não aponta zero-day, prompt injection, exploit de MCP nem produto comercial.</p></div>
+</div>
+<p class="small">A pergunta aberta mais importante do relatório.</p>
+<aside>4:15–5:00. Fatos do relatório da Binance: em 20 de outubro, o atacante usou o notebook comprometido do Engenheiro B e uma ferramenta interna de IA para assumir o controle do Engenheiro A, de Wallet DevOps, e do Engenheiro C, de software de carteiras. Logo descobriu um token de permissão de deploy de contêineres no computador de A. A Binance diz que reconstruiu a ferramenta de IA e seus controles de acesso, e que algumas medidas ficarão em sigilo. O que não foi dito: como a ferramenta deu controle sobre as máquinas, o nome dela, qual foi a falha. A StepSecurity observa que o relatório não identifica zero-day, prompt injection, exploit de MCP nem um produto comercial de IA como causa. Também não foram divulgados as permissões e a validade do token, a plataforma de contêineres e a configuração da política de assinatura. Leitura de analistas (não da Binance): um assistente de IA que alcança, executa em ou envia instruções a máquinas de colegas é um canal privilegiado de movimento lateral, com o nome que tiver; é o fato mais novo do caso e a lacuna maior (Security Boulevard). Sobre o papel da IA no resto da cadeia: em junho a IA foi a isca da busca; nada público mostra deepfake nem iscas escritas por IA (Brside). Pergunta para o time: nossas ferramentas internas de IA têm escopo, log pesquisável e threat model, como qualquer acesso privilegiado?</aside>
+</section>
+
+<section id="eip7702" data-transition="fade">
+<p class="eyebrow">O DESVIO · SERVIÇO DE ASSINATURA</p>
+<h2>Assinatura legítima, efeito persistente</h2>
+<div class="cards cards3">
+<div class="card"><p class="when">Serviço de assinatura</p><h3>Sem vazar chave</h3><p>O serviço assinou os saques. XRP, SOL, OP e BTC saíram das carteiras quentes.</p></div>
+<div class="card"><p class="when">EIP-7702</p><h3>Delegação na Ethereum</h3><p>Um contrato dos atacantes ganhou direitos parciais de execução sobre uma carteira quente. 50 transações de assinatura criaram as autorizações.</p></div>
+<div class="card"><p class="when">Contenção</p><h3>Suspender saques não bastou</h3><p>As autorizações ficam na blockchain. A carteira usa MPC, sem chave única para cancelar a delegação.</p></div>
+</div>
+<aside>5:00–5:40. O ponto técnico mais forte do caso. Os atacantes não roubaram uma chave privada: usaram o serviço interno de assinatura, que assina de forma legítima. Na Ethereum, abusaram do EIP-7702, que permite a uma conta delegar execução a um contrato sem expor a chave. Segundo a Binance, foram 50 transações de assinatura para manipular nonces e criar as autorizações. Como essas autorizações estavam registradas na blockchain, suspender os saques da Binance não as desfez; e como a carteira usava MPC, não havia uma chave única capaz de cancelar a delegação de imediato. O que o relatório não diz: como o serviço de assinatura aceitou os pedidos dos atacantes. Depois do roubo: cerca de US$ 2,85 bi congelados ou interceptados; o FBI atribuiu o ataque ao TraderTraitor e listou 628 endereços (608 Ethereum, 19 Bitcoin, 1 Solana). A Binance reconstruiu o sistema de carteiras e a ferramenta de IA. Valores variam por fonte: US$ 6,34 a 6,43 bi.</aside>
+</section>
+
+<section id="nonce" data-transition="fade">
+<p class="eyebrow">EIP-7702 · COMO O NONCE ENTRA</p>
+<h2>50 autorizações, uma válida</h2>
+<div class="cards">
+<div class="card"><p class="when">1 · Pedido</p><h3>50 assinaturas</h3><p>O serviço assinou 50 autorizações para a mesma carteira.</p></div>
+<div class="card"><p class="when">2 · Nonce</p><h3>Só uma vale</h3><p>Vale só com o nonce atual da conta, que seguia avançando.</p></div>
+<div class="card"><p class="when">3 · Efeito</p><h3>Delegação ativa</h3><p>Contrato dos atacantes executa pela carteira por cerca de 4 h.</p></div>
+<div class="card"><p class="when">4 · Contenção</p><h3>Revogação</h3><p>Autorização ao endereço zero às 00:10 UTC. MPC exigiu procedimento especial.</p></div>
+</div>
+<p class="small">As etapas 1 e 4 vêm do relatório da Binance; 2 e 3, de análises externas.</p>
+<aside>5:40–6:30. Detalhe técnico. Um EIP-7702 permite que uma conta delegue execução a um contrato. Uma autorização só tem efeito se o nonce dela for igual ao nonce atual da conta; as outras falham, mesmo com assinatura autêntica. Segundo análises de terceiros (ThreatMon e outras), a carteira continuava enviando transações e o nonce avançava, por isso foram necessárias várias autorizações; uma delas, com o nonce certo, delegou a carteira Binance 14 ao contrato dos atacantes. A autorização foi assinada com a própria chave da carteira, pelo serviço de assinatura comprometido. A Binance só confirma as 50 transações de assinatura para manipular o nonce e criar delegações maliciosas, e a revogação às 00:10 UTC de 30 de outubro, com uma autorização para o endereço zero. Como a carteira usa MPC, não havia uma chave única para revogar na hora, e foi preciso um procedimento especial: quase quatro horas. A Halborn discorda de culpar o MPC: o controle certo seria negar por padrão qualquer autorização 7702 e qualquer assinatura bruta. Sinal de detecção: 50 pedidos de autorização para a mesma conta em nonces consecutivos não acontecem em operação normal. Linha do tempo do dia 29: 17:15–19:56 UTC, contêiner e script no computador do engenheiro C; 20:05–20:09, saques de XRP; cerca de 20:20, as 50 autorizações (segundo Fireblocks e TRM); 23:56, última transferência de ETH; 00:10, revogação. A Binance só recebeu alerta interno depois das transferências de grande volume. Em aberto: por que o serviço assinou 50 autorizações EIP-7702 e se esse tipo de pedido tinha alguma etapa de aprovação.</aside>
+</section>
+
+<section id="exit" class="alt" data-transition="fade">
+<p class="eyebrow">RESPOSTA · SITUAÇÃO ATÉ AGORA</p>
+<h2>O dinheiro até agora</h2>
+<ul>
+<li>Cerca de 44% está congelado ou apreendido (Elliptic).</li>
+<li>O restante ficou em ativos que nenhuma emissora congela, e a lavagem é automatizada.</li>
+<li>A Binance repôs todo o valor aos usuários.</li>
+</ul>
+<aside>6:30–6:50. Vinte segundos, resumo rápido, sem entrar em detalhe. Congelamento: a Tether e a Circle congelaram cerca de US$ 1,57 bi em USDT e US$ 823 mi em USDC em minutos; o total congelado varia por fonte (Binance cerca de US$ 3 bi, Elliptic US$ 2,85 bi, DOJ mais de US$ 2,7 bi). Congelado não é recuperado. O restante: BTC, XRP, SOL e outros ativos sem emissor não puderam ser congelados, e US$ 60 mi em USDT viraram garantia na Aave para tomar cerca de US$ 44,6 mi em WETH, que ninguém congela. A lavagem, segundo a Elliptic, é automatizada, sem sinal de agente de IA decidindo. Em 12 de novembro, a Binance disse ter reposto todo o valor roubado. Se perguntarem mais: cerca de 32.000 transações na Tron, pagamentos horários por 31 horas, e 18.270 BTC parados desde o dia do roubo.</aside>
+</section>
+
+<section id="controls" data-transition="fade">
+<p class="eyebrow">CONTROLES A REVISAR</p>
+<h2>Seis falhas, seis perguntas</h2>
+<table class="tbl">
+<tr><th style="width:38%">Falha</th><th style="width:62%">Pergunta para o seu time</th></tr>
+<tr><td style="width:38%">Instalador adulterado</td><td style="width:62%">Instaladores têm origem verificada?</td></tr>
+<tr><td style="width:38%">Teste de código externo</td><td style="width:62%">Código externo roda só em ambiente isolado?</td></tr>
+<tr><td style="width:38%">Zero-day sem detecção</td><td style="width:62%">Há detecção por comportamento, além de assinatura?</td></tr>
+<tr><td style="width:38%">IA interna como ponte</td><td style="width:62%">Qual o alcance do agente em outras máquinas?</td></tr>
+<tr><td style="width:38%">Token numa estação</td><td style="width:62%">Escopo mínimo e vida curta?</td></tr>
+<tr><td style="width:38%">Serviço de assinatura</td><td style="width:62%">Quem pede a transação também a autoriza?</td></tr>
+</table>
+<p class="small">Uma pergunta para cada etapa do ataque. A Binance diz ter ampliado a detecção de anomalias e as varreduras.</p>
+<aside>6:50–7:30. Cada pergunta corresponde a uma etapa que vimos. Dê alguns segundos para o grupo responder em silêncio, para o próprio time. O segundo e o quarto costumam gerar mais debate: quem aqui abriria um desafio de código de um recrutador na máquina de trabalho? E o alcance de um agente de IA hoje é maior que o de um usuário? O terceiro: a Binance diz que passou a ampliar a detecção de anomalias comportamentais e as varreduras de dispositivos. O quinto: o token de deploy ficava numa estação de engenheiro. O sexto é separação de funções aplicada ao serviço de assinatura. Não é lista do que a Binance errou; são perguntas de controle.</aside>
+</section>
+
+<section id="discuss" class="alt" data-transition="fade">
+<p class="eyebrow">DISCUSSÃO</p>
+<h2>Para discutir no nosso time</h2>
+<ol>
+<li>Alguém aqui abriria um teste de código de recrutador na máquina de trabalho?</li>
+<li>Que acesso nossas ferramentas de IA têm hoje, e quem as audita?</li>
+<li>Onde uma ação crítica depende de uma única máquina?</li>
+</ol>
+<p class="source">Fontes: Binance (via CNBC, Bloomberg, SecurityWeek); FBI (via The Record).</p>
+<aside>7:30–8:00. Feche com as três perguntas e deixe o grupo escolher uma para debater. Fontes principais: relatório da Binance de 3 de novembro, citado por CNBC, Bloomberg, SecurityWeek, The Hacker News e Yahoo Finance; alerta do FBI de 31 de outubro, citado por The Record e SecurityWeek; operações de arquivo do pyenv reproduzidas por SafeDep e The Register; análises de terceiros (Halborn, Andrew Baker, StepSecurity, Security Boulevard, ThreatMon), marcadas como tal, marcadas como tal nos slides.</aside>
+</section>
+
+</div>
+<div id="notes"></div><div id="hint">← → navegar · N notas · F tela cheia</div>
+<script>
+const S=[...document.querySelectorAll('#stage>section')],st=document.getElementById('stage'),nt=document.getElementById('notes');
+let i=Math.max(0,Math.min(S.length-1,(parseInt(location.hash.slice(1))||1)-1));
+function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(-50%,-50%) scale(${k})`}
+function show(){S.forEach((s,j)=>s.classList.toggle('on',j===i));const a=S[i].querySelector('aside');nt.textContent=`${i+1}/${S.length} — `+(a?a.textContent:'');history.replaceState(null,'','#'+(i+1))}
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key))i=Math.min(S.length-1,i+1);else if(['ArrowLeft','PageUp'].includes(e.key))i=Math.max(0,i-1);else if(e.key.toLowerCase()==='n')nt.style.display=nt.style.display==='block'?'none':'block';else if(e.key.toLowerCase()==='f')document.documentElement.requestFullscreen?.();else return;show()});
+addEventListener('click',e=>{if(e.target.closest('#notes'))return;i=e.clientX>innerWidth/2?Math.min(S.length-1,i+1):Math.max(0,i-1);show()});
+addEventListener('resize',fit);fit();show();
+</script></body></html>
